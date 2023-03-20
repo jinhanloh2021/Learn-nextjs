@@ -1,5 +1,7 @@
-# First Post
-
+---
+date: "2023-03-21"
+title: "First Post"
+---
 This is my first post written in markdown
 
 Here's some __bold text__.

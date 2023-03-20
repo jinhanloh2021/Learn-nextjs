@@ -10,7 +10,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function FirstPostPage({ post: { title, body } }) {
+export default function FirstPostPage({ post: { title, body, date } }) {
   console.log('[FirstPost] render: ', title);
   return (
     <>
@@ -18,6 +18,7 @@ export default function FirstPostPage({ post: { title, body } }) {
         <title>{title + ' - My Blog'}</title>
       </Head>
       <main>
+        <p>{date}</p>
         <h1>{title}</h1>
         <article dangerouslySetInnerHTML={{ __html: body }} />
       </main>
