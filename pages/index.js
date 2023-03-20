@@ -1,6 +1,17 @@
+import { getSlugs } from '@/lib/posts';
 import Head from 'next/head';
 
-export default function Home() {
+export async function getStaticProps() {
+  const slugs = await getSlugs();
+  return {
+    props: {
+      slugs,
+    },
+  };
+}
+
+export default function Home({ slugs }) {
+  console.log('[HomePage] render slugs: ', slugs);
   return (
     <>
       <Head>
