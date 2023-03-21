@@ -1,6 +1,10 @@
 import Head from 'next/head';
 import { getPost, getSlugs } from '../../lib/posts';
 
+/**
+ * [slug].js in post. So this is a dynamic page, will render as /posts/[slug] such as /posts/first-post
+ */
+
 export async function getStaticPaths() {
   const slugs = await getSlugs();
   return {

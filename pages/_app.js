@@ -1,12 +1,12 @@
-import "@/styles/globals.css";
-import Head from "next/head";
-import NavBar from "../components/NavBar";
+import '@/styles/globals.css';
+import Head from 'next/head';
+import NavBar from '../components/NavBar';
 
 export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link rel="icon" href="../public/favicon.ico" />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
       <header>
         <NavBar />
